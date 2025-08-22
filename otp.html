@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Reset - TikketFy</title>
+</head>
+<body style="margin:0; padding:0; background-color:#f5f5f5; font-family: Arial, sans-serif;">
+
+<!-- Preheader / view in browser -->
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+  <tr>
+    <td align="center" style="padding:10px 20px 0 20px;">
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600">
+        <tr>
+          <td style="font-size:12px; color:#888888; text-align:right; padding:4px 0;">
+            Email not displaying correctly? 
+            <a href="{{view_in_browser_url}}" style="color:#1a73e8; text-decoration:underline; font-weight:600;">VIEW IT</a> in your browser.
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- Wrapper -->
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td align="center" style="padding: 8px 0 30px;">
+
+<!-- Main container -->
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="background-color:#ffffff; border-radius:6px; overflow:hidden;">
+
+<!-- Logo -->
+<tr>
+<td align="Start" style="padding: 20px; border-bottom:solid 1px #E2E8F0;">
+    <img src="Assets/Sidebar-Logo_example.svg" alt="TikketFy" width="150" style="display:block; border:0;">
+</td>
+</tr>
+
+<!-- Content -->
+<tr>
+<td style="padding: 30px 30px 30px 30px; color:#333333;">
+
+    <h2 style="font-size: 20px; font-weight: bold; margin:0 0 10px 0;">Hi {{name}},</h2>
+
+    <p style="font-size: 14px; line-height: 20px; margin:0 0 15px 0; color: #718096;">
+        Someone has requested to reset the password for your account ({{email}}). If this wasn't you, please ignore this email.
+    </p>
+
+    <p style="font-size: 14px; line-height: 20px; margin:0 0 20px 0; color: #718096;">
+        If this was you, use the code below to proceed with resetting your password.
+    </p>
+
+    <!-- Code box -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin:20px 0;">
+        <tr>
+            <td align="Start" style="background-color:#f7f8fa; border:1px solid #e0e0e0; border-radius:10px; padding:18px;">
+                <span style="font-size: 28px; font-weight:700; letter-spacing:2px; color:#111111; display:block;">{{codigo}}</span>
+                <span style="display:block; font-size:12px; color:#777777; margin-top:6px;">Your password reset code. Enter in the app to reset your password</span>
+            </td>
+        </tr>
+    </table>
+
+    <p style="font-size: 14px; color:#718096; margin:0;">
+        This code is valid for seven minutes.
+    </p>
+
+</td>
+</tr>
+
+<!-- Footer -->
+<tr>
+<td style="padding: 20px 30px; background-color:#EDF2F7; font-size: 12px; color:#718096; text-align:start;">
+    Terms and Conditions © 2024 TikketFy. All rights reserved.
+    <br><br>
+    Got any questions or need help? We’re here for you. Write to us at 
+    <a href="mailto:help@tikketfy.com" style="color:#000000; text-decoration:none;">help@tikketfy.com</a>
+</td>
+</tr>
+
+</table>
+<!-- End main container -->
+
+</td>
+</tr>
+</table>
+<!-- End wrapper -->
+
+</body>
+</html>
