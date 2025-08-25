@@ -34,12 +34,26 @@
 <!-- Header image placeholder -->
 <tr>
 <td style="padding: 0;">
-    <!-- Header background image -->
+    <!-- Header background image with logo -->
     <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600">
         <tr>
-            <td style="background-image: url('Assets/Thumbail.png'); background-size: cover; background-position: center; height: 172px; position: relative;">
-                <!-- Logo in top-left corner -->
-                <img src="Assets/Sidebar-Logo_example-withe.svg" alt="TikketFy" width="120" style="display:block; border:0; margin: 20px 0 0 20px;">
+            <td style="background-image: url('Assets/Thumbail.png'); background-size: cover; background-position: center; height: 172px;">
+                <!-- Logo positioned in top-left corner using table structure -->
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                        <td style="width: 140px; height: 40px; padding: 20px 0 0 20px; vertical-align: top;">
+                            <img src="Assets/Sidebar-Logo_example-withe.svg" alt="TikketFy" width="120" height="40" style="display:block; border:0; width:120px; height:40px;">
+                        </td>
+                        <td style="width: 460px; height: 40px; padding: 20px 20px 0 0; vertical-align: top;">
+                            <!-- Empty space for right side -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="height: 132px;">
+                            <!-- Remaining header space -->
+                        </td>
+                    </tr>
+                </table>
             </td>
         </tr>
     </table>
@@ -48,15 +62,15 @@
 
 <!-- Content -->
 <tr>
-<td style="padding: 30px 30px 30px 30px; color:#333333;">
+<td style="padding: 30px 30px 30px 30px; color:#000000;">
 
-    <h2 style="font-size: 24px; font-weight: bold; margin:0 0 15px 0; color: #333333;">Your sales tools is ready 🚀</h2>
+    <h2 style="font-size: 24px; font-weight: bold; margin:0 0 15px 0; color: #000000;">Your sales tools is ready 🚀</h2>
 
-    <p style="font-size: 16px; line-height: 24px; margin:0 0 20px 0; color: #333333;">
+    <p style="font-size: 16px; line-height: 24px; margin:0 0 20px 0; color: #718096;">
         Hi {{Name}}, you now have everything you need to start selling today.
     </p>
 
-    <p style="font-size: 16px; line-height: 24px; margin:0 0 30px 0; color: #333333;">
+    <p style="font-size: 16px; line-height: 24px; margin:0 0 30px 0; color: #718096;">
         In this email, you'll find your QR code and your unique link. Share them with your customers and start selling your tickets right away.
     </p>
 
