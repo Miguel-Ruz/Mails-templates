@@ -24,6 +24,11 @@ A collection of professional email templates designed for the TikketFy platform,
 - Personal sales link integration
 - Dashboard preview integration
 
+### 5. **Create Password** (`create-password.html`)
+- Account activation step
+- Primary call-to-action button to set password
+- Consistent with EOD template styles
+
 ## 🎨 Design Features
 
 - **Consistent Branding**: All templates use TikketFy's visual identity
@@ -60,6 +65,7 @@ Mails/
 ├── ticket.html
 ├── eod.html
 ├── saletool.html
+├── create-password.html
 └── README.md
 ```
 
