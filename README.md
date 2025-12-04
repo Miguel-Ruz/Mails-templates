@@ -29,6 +29,12 @@ A collection of professional email templates designed for the TikketFy platform,
 - Primary call-to-action button to set password
 - Consistent with EOD template styles
 
+### 6. **Verify Email Address** (`verify-email.html`)
+- Email verification for new account creation
+- Prominent call-to-action button aligned to the left
+- Optimized for SendGrid with Handlebars syntax
+- Includes disclaimer for unauthorized account creation
+
 ## 🎨 Design Features
 
 - **Consistent Branding**: All templates use TikketFy's visual identity
@@ -66,6 +72,7 @@ Mails/
 ├── eod.html
 ├── saletool.html
 ├── create-password.html
+├── verify-email.html
 └── README.md
 ```
 
@@ -85,6 +92,7 @@ Mails/
 - `{{view_in_browser_url}}` - Web version link
 - `{{codigo}}` - OTP code (for password reset)
 - `{{tickets}}` - Ticket loop (for ticket template)
+- `{{verify_email_url}}` - Email verification link (for verify-email template)
 
 ### Branding Updates
 - Logo files are located in the `Assets/` folder
