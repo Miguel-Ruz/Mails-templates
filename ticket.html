@@ -1,120 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Tickets - TikketFy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Tickets - TikketFy</title>
 </head>
+
 <body style="margin:0; padding:0; background-color:#f5f5f5; font-family: Arial, sans-serif;">
 
-<!-- View in browser -->
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-<tr>
-<td align="center" style="padding:10px 20px 0 20px;">
-  <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0">
+  <!-- View in browser -->
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
     <tr>
-      <td style="font-size:12px; color:#888888; text-align:right;">
-        Email not displaying correctly? 
-        <a href="{{view_in_browser_url}}" style="color:#000000; font-weight:bold; text-decoration:none;">VIEW IT</a> in your browser.
-      </td>
-    </tr>
-  </table>
-</td>
-</tr>
-</table>
-
-<!-- Main wrapper -->
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-<tr>
-<td align="center" style="padding:0 0 30px 0;">
-
-<!-- Container -->
-<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff; border-radius:6px; overflow:hidden;">
-
-<!-- Logo row -->
-<tr>
-  <td style="padding:15px 30px; background-color:#ffffff;">
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-      <tr>
-        <td align="left">
-          <img src="Assets/Sidebar-Logo_example.svg" alt="TikketFy Logo" width="120" style="display:block; border:0;">
-        </td>
-        <td align="right"></td>
-      </tr>
-    </table>
-  </td>
-</tr>
-
-<!-- Header image -->
-<tr>
-<td>
-  <img src="Assets/Ticket send.png" alt="Your Tickets" width="600" style="display:block; width:100%; max-width:600px; border:0;">
-</td>
-</tr>
-
-<!-- Body content -->
-<tr>
-<td style="padding:30px;">
-
-  <h2 style="font-size:22px; font-weight:bold; margin:0 0 15px 0; color:#000000;">Your ticket{s} here</h2>
-  
-  <p style="font-size:14px; font-weight: 700; margin:0 0 15px 0; color:#000000;">Hi {{name}},</p>
-
-  <p style="font-size:14px; margin:0 0 15px 0; color:#718096;">
-    Your ticket{s} are ready and can be found attached to this email. 🎟✨
-  </p>
-
-  <p style="font-size:14px; margin:0 0 25px 0; color:#718096;">
-    Remember to bring them with you (on your phone or printed) on the day of the event for a hassle-free entry.
-  </p>
-
-  <!-- Tickets loop -->
-  {{#each tickets}}
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:15px; border:1px solid #e5e5e5; border-radius:8px;">
-    <tr>
-      <td style="padding:15px;">
-        <p style="font-size:16px; font-weight:bold; color:#000000; margin:0 0 8px 0;">{{event_name}}</p>
-        <p style="margin:0; font-size:14px; color:#333333;"><strong>Date:</strong> {{event_date}}</p>
-        <p style="margin:0; font-size:14px; color:#333333;"><strong>Time:</strong> {{event_time}}</p>
-        <p style="margin:0 0 15px 0; font-size:14px; color:#333333;"><strong>Ticket code:</strong> {{ticket_code}}</p>
-
-        <!-- Button and quantity -->
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+      <td align="center" style="padding:10px 20px 0 20px;">
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0">
           <tr>
-            <td>
-              <a href="{{ticket_url}}" style="display:inline-block; background-color:#e91e63; color:#ffffff; padding:8px 14px; border-radius:4px; text-decoration:none; font-size:14px;">Download ticket</a>
+            <td style="font-size:12px; color:#888888; text-align:right;">
+              Email not displaying correctly?
+              <a href="{{view_in_browser_url}}" style="color:#000000; font-weight:bold; text-decoration:none;">VIEW
+                IT</a> in your browser.
             </td>
-            <td align="right" style="font-size:12px; color:#777777;">x{{quantity}} Unit{{#if plural}}s{{/if}}</td>
           </tr>
         </table>
       </td>
     </tr>
   </table>
-  {{/each}}
-  <!-- End tickets loop -->
 
-  <p style="font-size:14px; color:#718096; margin-top:20px;">Thanks for buying with TikketFy!</p>
+  <!-- Main wrapper -->
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td align="center" style="padding:0 0 30px 0;">
 
-</td>
-</tr>
+        <!-- Container -->
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0"
+          style="background-color:#ffffff; border-radius:6px; overflow:hidden;">
 
-<!-- Footer -->
-<tr>
-<td style="padding: 20px 30px; background-color:#EDF2F7; font-size: 12px; color:#718096; text-align:start;">
-    Terms and Conditions © 2024 TikketFy. All rights reserved.
-    <br><br>
-    Got any questions or need help? We’re here for you. Write to us at 
-    <a href="mailto:help@tikketfy.com" style="color:#000000; text-decoration:none;">help@tikketfy.com</a>
-</td>
-</tr>
 
-</table>
-<!-- End container -->
 
-</td>
-</tr>
-</table>
-<!-- End wrapper -->
+          <!-- Logo row -->
+          <tr>
+            <td align="Start" style="padding: 20px; border-bottom:solid 1px #E2E8F0;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td align="left">
+                    <img src="Assets/Sidebar-Logo_example.svg" alt="TikketFy Logo" width="120"
+                      style="display:block; border:0;">
+                  </td>
+                  <td align="right"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Header image -->
+          <tr>
+            <td>
+              <img src="Assets/ticket_voucher_header.png" alt="Your Tickets" width="600"
+                style="display:block; width:100%; max-width:600px; border:0;">
+            </td>
+          </tr>
+
+          <!-- Body content -->
+          <tr>
+            <td style="padding:30px; background-color:#ffffff;">
+
+              <h2
+                style="font-size:22px; font-weight:bold; margin:0 0 15px 0; color:#000000; font-family: Arial, sans-serif;">
+                Your ticket{s} here</h2>
+
+              <p
+                style="font-size:14px; font-weight: 400; margin:0 0 15px 0; color:#718096; font-family: Arial, sans-serif;">
+                Hi {{name}},</p>
+
+              <p style="font-size:14px; margin:0 0 25px 0; color:#718096; font-family: Arial, sans-serif;">
+                Your ticket{s} are ready, you can find them by clicking the button below.
+              </p>
+
+              <!-- Button -->
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin:0 0 25px 0;">
+                <tr>
+                  <td style="border-radius:4px; background-color:#e91e63;">
+                    <a href="{{ticket_url}}" target="_blank"
+                      style="background-color:#e91e63; color:#ffffff; font-family: Arial, sans-serif; font-size:16px; font-weight:bold; text-decoration:none; padding: 12px 24px; border-radius:4px; display:inline-block; border: 1px solid #e91e63;">
+                      Get your ticket{s} here
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <p style="font-size:14px; margin:0 0 15px 0; color:#718096; font-family: Arial, sans-serif;">
+                Remember to bring them with you (on your phone or printed) on the day of the event for a hassle-free
+                entry.
+              </p>
+
+              <p style="font-size:14px; margin:0 0 25px 0; color:#718096; font-family: Arial, sans-serif;">
+                Attached to this email, you will find your receipt; if you don't find it here, you can also download it
+                using the button.
+              </p>
+
+              <p style="font-size:14px; color:#718096; margin-top:20px; font-family: Arial, sans-serif;">Thanks for
+                purchasing with TikketFy!</p>
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td
+              style="padding: 20px 30px; background-color:#EDF2F7; font-size: 12px; color:#718096; text-align:start; font-family: Arial, sans-serif;">
+
+              <!-- Social Icons -->
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 15px;">
+                <tr>
+                  <td style="padding-right: 10px;">
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"
+                        width="24" height="24" style="display: block; border: 0;"></a>
+                  </td>
+                  <td style="padding-right: 10px;">
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"
+                        width="24" height="24" style="display: block; border: 0;"></a>
+                  </td>
+                  <td style="padding-right: 10px;">
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Pinterest"
+                        width="24" height="24" style="display: block; border: 0;"></a>
+                  </td>
+                  <td>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"
+                        width="24" height="24" style="display: block; border: 0;"></a>
+                  </td>
+                </tr>
+              </table>
+
+              <p style="margin: 0 0 10px 0; color: #000000; font-weight: bold;">
+                {{Sender_Address}}, {{Sender_City}}, {{Sender_State}} {{Sender_Zip}}
+              </p>
+
+              Terms and Conditions © 2024 TikketFy. All rights reserved.
+              <br><br>
+              Got any questions or need help? We’re here for you. Write to us at
+              <a href="mailto:help@tikketfy.com"
+                style="color:#000000; text-decoration:none; font-weight: bold;">help@tikketfy.com</a>
+            </td>
+          </tr>
+
+        </table>
+        <!-- End container -->
+
+      </td>
+    </tr>
+  </table>
+  <!-- End wrapper -->
 
 </body>
+
 </html>
