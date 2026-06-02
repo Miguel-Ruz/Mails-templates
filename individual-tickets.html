@@ -73,64 +73,66 @@
               <!-- Tickets container -->
               {{#each tickets}}
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
-                style="margin:0 0 20px 0; border:1px solid #E2E8F0; border-radius:6px; overflow:hidden; background-color:#ffffff;">
+                style="margin:0 0 20px 0; border:1px solid #E2E8F0; border-radius:16px; overflow:hidden; background-color:#ffffff;">
                 
                 <!-- Ticket header -->
                 <tr>
-                  <td style="padding:20px 20px 15px 20px; background-color:#ffffff;">
-                    <h3 style="font-size:16px; font-weight:bold; margin:0; color:#000000; font-family: Arial, sans-serif;">
+                  <td style="padding: 16px 16px 16px 16px; background-color:#ffffff;">
+                    <h3 style="font-size:18px; font-weight:bold; margin:0; color:#111827; font-family: Arial, sans-serif;">
                       {{event_name}}
                     </h3>
-                  </td>
-                </tr>
-
-                <!-- Ticket code -->
-                <tr>
-                  <td style="padding:0 20px 15px 20px; width: 100%;">
-                    <p style="font-size:12px; margin:0; color:#718096; font-family: Arial, sans-serif;">
-                      Ticket code: <span style="font-weight:bold; color:#000000;">{{ticket_code}}</span>
+                    <p style="font-size:13px; margin:8px 0 0 0; color:#6B7280; font-family: Arial, sans-serif;">
+                      Ticket code: <span style="font-weight:bold; color:#111827;">{{ticket_code}}</span>
                     </p>
                   </td>
                 </tr>
 
-                <!-- Wallet and Download buttons container -->
+                <!-- Wallet section -->
                 <tr>
-                  <td style="padding:0 20px 20px 20px; width:100%;">
-                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <td style="padding:0 16px 16px 16px; background-color:#ffffff;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+                      style="background-color:#F8FAFC; border:1px solid #E2E8F0; border-radius:12px;">
                       <tr>
-                        <!-- Wallet buttons container -->
-                        <td style="vertical-align:middle;">
-                          <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                        <td style="padding:16px;">
+                          <p style="font-size:13px; margin:0 0 12px 0; color:#475569; font-family: Arial, sans-serif;">
+                            Add the ticket to your wallet
+                          </p>
+                          <table role="presentation" cellpadding="0" cellspacing="0" border="0">
                             <tr>
                               <td style="padding-right:10px;">
                                 <a href="{{google_wallet_url}}" style="display:inline-block; text-decoration:none;">
-                                  <img src="/Assets/Google-wallet.png" 
-                                    alt="Add to Google Wallet" width="auto" height="32" style="display:block; border:0; height:32px;">
+                                  <img src="/Assets/Google-wallet.png"
+                                    alt="Add to Google wallet" width="120" height="32" style="display:block; border:0;">
                                 </a>
                               </td>
                               <td>
                                 <a href="{{apple_wallet_url}}" style="display:inline-block; text-decoration:none;">
-                                  <img src="/Assets/Apple-wallet.png" 
-                                    alt="Add to Apple Wallet" width="auto" height="32" style="display:block; border:0; height:32px;">
+                                  <img src="/Assets/Apple-wallet.png"
+                                    alt="Add to Apple Wallet" width="120" height="32" style="display:block; border:0;">
                                 </a>
                               </td>
                             </tr>
                           </table>
                         </td>
-                        <!-- Spacer -->
-                        <td style="width:100%;"></td>
-                        <!-- Download button -->
-                        <td style="text-align:right; vertical-align:middle;">
-                          <table role="presentation" cellspacing="0" cellpadding="0" border="0">
-                            <tr>
-                              <td style="border-radius:4px; background-color:#e91e63;">
-                                <a href="{{download_ticket_url}}" target="_blank"
-                                  style="background-color:#e91e63; color:#ffffff; font-family: Arial, sans-serif; font-size:14px; font-weight:bold; text-decoration:none; padding: 10px 16px; border-radius:4px; display:inline-block; border: 1px solid #e91e63; white-space:nowrap;">
-                                  Download&nbsp;Ticket
-                                </a>
-                              </td>
-                            </tr>
-                          </table>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <!-- Quantity + Download -->
+                <tr>
+                  <td style="padding:0 16px 16px 16px; background-color:#ffffff;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td style="vertical-align:middle; color:#475569; font-family: Arial, sans-serif; font-size:13px;">
+                          Quantity: <br>
+                          {{quantity}}
+                        </td>
+                        <td style="white-space:nowrap; width:1%; text-align:right; vertical-align:middle;">
+                          <a href="{{download_ticket_url}}" target="_blank"
+                            style="background-color:#E11D48; color:#ffffff; font-family: Arial, sans-serif; font-size:14px; font-weight:bold; text-decoration:none; padding:12px 18px; border-radius:8px; display:inline-block; border:1px solid #E11D48; white-space:nowrap;">
+                            Download ticket
+                          </a>
                         </td>
                       </tr>
                     </table>
